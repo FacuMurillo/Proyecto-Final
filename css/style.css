@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Righteous';
+}
+/* Header */
+header{
+    background-image: linear-gradient(to right,#166cf7,#497ef0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px;
+    height: 40px;
+    position:sticky;
+    top: 0;
+    border-bottom: 2px solid whitesmoke;
+}
+
+
+.header__nav__a a{
+    text-decoration: none;
+    color: #E7DFDD;
+    margin: 10px;
+    padding: 10px;
+}
+.header__nav__a a:hover{
+    background-color: #166cf7;
+    padding: 10px;
+}
+.iconosDeRedes{
+}
+.iconosDeRedes a{
+    color: #E7DFDD;
+    text-decoration:none ;
+    margin: 5px;
+}
+.iconosDeRedes a:hover{
+        background-color: #166cf7;
+}
+/* Fin del header */
+/* Inicio del Main */
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+}
+main section{
+    color: #201f1f;
+    text-align: center;
+    font-weight: 100;
+}
+main .banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .banner img{
+    width: 800px;
+    height: 200px;
+}
+main .banner h2{
+    font-weight: 100;
+    text-align: center;
+}
+main section article .sobreNosotros{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px;
+    margin: 20px;
+    color: #201f1f;
+    font-weight: lighter;
+}
+.bannerairmax{
+        width: 800px;
+        height: 200px;
+ }
+.conteiner-bannerairmax{
+    margin: 20px;
+}
+.parrafos{
+    padding: 20px;
+}
+.parrafos h2{
+    font-weight: 100;
+    padding: 20px;
+}
+/* Fin del Main */
+/* Footer */
+footer{
+    background-image: linear-gradient(to right,#166cf7,#497ef0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer a{
+    color: #201f1f;
+    list-style: none;
+    text-decoration: none;
+}
+.mapa{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.mapa h3{
+    margin-top: 30px;
+    font-weight: 100;
+    color:#E7DFDD ;
+}
+.mapa iframe{
+    height: 120px;
+    width: 250px;
+    margin: 15px;
+}
+.iconosDeRedesFT{
+    margin-top: 25px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconosDeRedesFT a{
+    color: #E7DFDD;
+    padding: 10px
+}
+.iconosDeRedesFT a:hover{
+    background-color: #497ef0;
+}
+.logoft{
+    padding: 10px;
+    margin: 40px;
+}
+/* Fin de Footer */
+/* Air Max */
+.mainAirMax {
+    font-weight: lighter;
+    text-align: center;
+    background-color: white;
+    color: #201f1f;
+}
+.mainAirMax h1{
+    color: #166cf7;
+}
+.airMax{
+    margin: 20px;
+    background-color: white;
+    color: #201f1f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.airMax div{
+    margin: 20px;
+}
+.card{
+    border: 5px solid #166cf7;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+.card__img{
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    border: 5px#166cf7 solid ;
+    border-radius: 15px;
+}
+.card__title{
+    background-color: #166cf7;
+    border-radius: 5px;
+    color: whitesmoke;
+}
+.card__button{
+ border: 1px solid 166cf7;
+}
+
+/* Fin de Air Max */
+
+/* Grid */
+.grid{
+    display: grid;
+    grid-template-columns: 3;
+    grid-template-rows: 2;
+}
+.grid h1{
+    color: #166cf7;
+    text-align: center;
+}
+
+
+/* Media queries */
+
+@media only screen and (max-width:1024px){
+ .banner img{
+    width: 600px;
+    height: 20px;
+ }
+ header{
+ }
+ .iconosDeRedes{
+    display: flex;
+    flex-direction: row;
+ }
+}
+@media only screen and (max-width:830px){
+    header{
+        height: 100px;
+        justify-content:space-between;
+        align-items: center;
+        padding: 10px;
+    }
+    .logo{
+        display: none;
+    }
+    .header__nav__a{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    main .banner img{
+        width: 700px;
+        height: 200px;
+    }
+    .sobreNosotros img{
+        width: 400px;
+        height: 150px;
+     }
+     .bannerairmax{
+        width: 700px;
+        height: 200px;
+     }
+
+}
+@media only screen and (max-width:768px){
+    header{
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main .banner img{
+        width: 500px;
+        height: 150px;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+    }
+     .iconosDeRedes{
+        display: flex;
+        flex-direction: row;
+     }
+     .sobreNosotros img{
+        width: 350px;
+        height: 150px;
+     }
+     .bannerairmax{
+        width: 500px;
+        height: 150px;
+     }
+}
+@media only screen and (max-width:576px){
+    header{
+        position:relative;
+        height: 170px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    main .banner img{
+        width: 450px;
+        height: 150px;
+    }
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+    }
+     .iconosDeRedes{
+        display: flex;
+        flex-direction: row;
+     }
+     .bannerairmax{
+        width: 450px;
+        height: 150px;
+     }
+     footer{
+        flex-direction: column;
+        padding: 5px;
+     }
+     .iconosDeRedesFT{
+        flex-direction: row;
+     }
+}
+@media only screen and (max-width:425px){
+    header{
+        position:relative;
+        height: 200px;
+        align-content: space-between;
+        flex-direction: row;
+    }
+    .header__nav__a{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .iconosDeRedes{
+        display: flex;
+        flex-direction: row;
+    }
+    main .banner img{
+        width: 400px;
+        height: 150px;
+    }
+    .bannerairmax{
+        width: 400px;
+        height: 150px;
+     }
+}
+@media only screen and (max-width:375px){
+    header{
+        position:relative;
+        height: 180px;
+        align-content: space-between;
+        flex-direction: row;
+    }
+    .header__nav__a{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .iconosDeRedes{
+        display: flex;
+        flex-direction: row;
+    }
+    main .banner img{
+        width: 370px;
+        height: 150px;
+    }
+    .bannerairmax{
+        width: 370px;
+        height: 150px;
+     }
+     .sobreNosotros img{
+        width: 320px;
+        height: 150px;
+     }
+}
+@media only screen and (max-width:320px){
+    header{
+        position:relative;
+        height: 180px;
+        align-content: space-between;
+        flex-direction: row;
+    }
+    .header__nav__a{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .iconosDeRedes{
+        display: flex;
+        flex-direction: row;
+    }
+    main .banner img{
+        width: 280px;
+        height: 100px;
+    }
+    .bannerairmax{
+        width: 280px;
+        height: 100px;
+     }
+     .sobreNosotros img{
+        width: 280px;
+        height: 120px;
+     }
+}
