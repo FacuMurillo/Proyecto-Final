@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="../images/favicon_nike.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
     <title>Nike</title>
 </head>
 <body>
@@ -46,48 +49,58 @@
     </header>
     <!-- Fin del header -->
     <!-- inicio Main -->
-    <main>
-        <main class="grid"> 
-            <h1>Air Force</h1>
-            <section class="airMax">
+    <main class="mainbt">
+        <h1>Air Force</h1>
+     <div class="conteiner conteinerPropio">
+         <div class="row">
+             <div class="col-lg-4 col-md-6 col-sm-12">
                 <div class="card">
                     <img src="../images/airforce1.jpg" alt="Air Force 1" class="card__img">
-                    <h2 class="card__title">Air Force 1</h2>
+                    <h3 class="card__title">Air Force 1</h2>
                     <p class="card__p">$30.000</p>
                     <p class="card__button">Comprar</p>
+                  </div>
                 </div>
-                <div class="card">
-                    <img src="../images/airforce1colorpastel.jpg" alt="Air Force 1 Color Pastel" class="card__img">
-                    <h2 class="card__title">Air Force 1 Color Pastel</h2>
-                    <p class="card__p">$35.000</p>
-                    <p class="card__button">Comprar</p>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/airforce1colorpastel.jpg" alt="Air Force 1 Color Pastel" class="card__img">
+                        <h3 class="card__title">Air Force 1 Color Pastel</h3>
+                        <p class="card__p">$35.000</p>
+                        <p class="card__button">Comprar</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="../images/airforce1shadow.jpg" alt="Air Force 1 Shadow" class="card__img">
-                    <h2 class="card__title">Air Force 1 Shadow</h2>
-                    <p class="card__p">$28.000</p>
-                    <p class="card__button">Comprar</p>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="card">
+                        <img src="../images/airforce1shadow.jpg" alt="Air Force 1 Shadow" class="card__img">
+                        <h3 class="card__title">Air Force 1 Shadow</h3>
+                        <p class="card__p">$28.000</p>
+                        <p class="card__button">Comprar</p>
+                     </div>
                 </div>
-                <div class="card">
-                    <img src="../images/airforce1xsupreme.jpg" alt="Air Force 1 x Supreme" class="card__img">
-                    <h2 class="card__title">Air Force 1 x Supreme</h2>
-                    <p class="card__p">$50.000</p>
-                    <p class="card__button">Comprar</p>
+                 <div class="col-lg-4 col-md-6 col-sm-12">
+                     <div class="card">
+                         <img src="../images/airforce1xsupreme.jpg" alt="Air Force 1 x Supreme" class="card__img">
+                         <h3 class="card__title">Air Force 1 x Supreme</h3>
+                         <p class="card__p">$50.000</p>
+                        <p class="card__button">Comprar</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="../images/nikesbdunk1.jpg" alt="Nike SB Dunk 1" class="card__img">
-                    <h2 class="card__title">Nike SB Dunk 1</h2>
-                    <p class="card__p">$25.000</p>
-                    <p class="card__button">Comprar</p>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                       <div class="card">
+                         <img src="../images/nikesbdunk1.jpg" alt="Nike SB Dunk 1" class="card__img">
+                         <h3 class="card__title">Nike SB Dunk 1</h3>
+                         <p class="card__p">$25.000</p>
+                         <p class="card__button">Comprar</p>
+                     </div>
+                 </div> 
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                     <div class="card">
+                        <img src="../images/NikeSBChron2.jpg" alt="Nike SB Chron 2" class="card__img">
+                        <h3 class="card__title">Nike SB Chron 2</h3>
+                        <p class="card__p">$65.000</p>
+                        <p class="card__button">Comprar</p>
+                    </div>
                 </div>
-                <div class="card">
-                    <img src="../images/NikeSBChron2.jpg" alt="Nike SB Chron 2" class="card__img">
-                    <h2 class="card__title">Nike SB Chron 2</h2>
-                    <p class="card__p">$65.000</p>
-                    <p class="card__button">Comprar</p>
-                </div>
-            </section>
-        </main>
     </main>
         <!-- Footer -->
         <footer>
@@ -108,14 +121,16 @@
                       </svg>
                 </a>
                 </div>
-            <div class="logoft">
-                <img src="../images/logoahorasi.png" alt="Logo de Nike">
-            </div>
             <div class="mapa">
                 <h3>Sede Central</h3>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89513.6991962775!2d-122.81069365!3d45.4838408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5495082476f88863%3A0x10e0cf158aacbd08!2sBeaverton%2C%20Oreg%C3%B3n%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1662146738080!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">Sede Central</iframe>
             </div>
         </footer>
         <!-- Fin del Footer -->
+
+        
+        <!-- Js -->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
 </body>
 </html>
