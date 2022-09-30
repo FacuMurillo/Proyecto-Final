@@ -1,15 +1,27 @@
 @import "./bases/variables";
 @import "./componentes/global";
 
-
-
 /* Inicio del Main */
+
+$colores: ( 
+    bg-color:#ffff
+    principal:#195dba
+    secundario:#201f1f
+    letras: #E7DFDD
+);
+
+@mixin tamaño ($width, $height){
+    width: $width;
+    height: $height;
+}
+
 main{
+    @extend *;
     display: flex;
     flex-direction: column;
-    background-color: #ffff;
+    background-color: map-get($colores , $bg-color);
     h2{
-        color: $color-secundario;
+        color: map-get($colores , $secundario);
         font-weight: bold;
         margin: 10px;
         transition: background-color;
@@ -21,7 +33,7 @@ main{
             }
     }
     section{
-        color: $color-secundario;
+        color: map-get($colores , $secundario);
         text-align: center;
         font-weight: 100;
         .sobreNosotros{
@@ -32,7 +44,7 @@ main{
             flex-wrap: wrap;
             padding: 10px;
             margin-top: 10px;
-            color: #201f1f;
+            color: map-get($colores , $secundario);
             font-weight:normal;
             line-height: 30px;
             img{
@@ -45,7 +57,7 @@ main{
         }
     }
     .carrousel img{
-        width: 1024px;
+        @include tamaño(1024px,0);
         border-radius: 10px;
     }
     .banner{
@@ -98,7 +110,7 @@ main{
     }
     h3:hover{
         opacity: 70%;
-        color: #195dba;
+        color: map-get($colores , $color-principal);
     }
 }
         /* Fin del Main */
